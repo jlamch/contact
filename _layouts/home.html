@@ -1,0 +1,27 @@
+{% include head.html %}
+
+  <div id="home" class="section scrollspy">
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center purple-text text-lighten-5 jlshadow">{{ site.title }}</h1>
+        <div class="row center">
+          <h5 class="header center purple-text text-lighten-4 light jlshadow">{{ site.description }}</h5>
+        </div>
+       
+          <div id="contact" class="section scrollspy">
+            <h3 style="text-align:center;" class="purple-text text-lighten-5 jlshadow">Contact</h3>
+            {% include contact.html %}
+          </div>
+      
+      </div>
+    </div>
+    <div class="parallax"><img src="{{site.parallax_image_one}}" alt="Unsplashed background img 1"></div>
+  </div>
+</div>
+
+
+{% include nav-burger.html %}
+
+{% include footer.html %}
